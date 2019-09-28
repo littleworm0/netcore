@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'bat "docker build"'
+        bat 'bat "docker build"'
       }
     }
   }
