@@ -1,8 +1,7 @@
 pipeline {
   agent {
-    docker {
-      args '-p 9011:9011'
-      image 'mycore3'
+    dockerfile {
+      filename 'Dockerfile'
     }
 
   }
