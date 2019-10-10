@@ -14,7 +14,7 @@ namespace CoreFirst.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "peng", "value2" };
+            return new string[] { "peng", "rong" };
         }
 
         // GET api/values/5
