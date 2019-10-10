@@ -1,14 +1,14 @@
 pipeline {
   agent {
-    docker {
-      image 'mcore'
+    dockerfile {
+      filename 'DockerFile'
     }
 
   }
   stages {
     stage('Build') {
       steps {
-        bat '  "docker build -t mcore ."'
+        bat '  echo \'Testing..\''
       }
     }
   }
